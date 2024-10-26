@@ -1,0 +1,64 @@
+- JOB APPLICATION -
+
+Description: A mobile application that can track employees for a wood business.
+Supported Platforms: iOs/Android.
+Technologies: Dart and Flutter, MongoDB, Java 21, Spring, Spring Boot & Security.
+
+Front Features:
+
+1-) English and Spanish Language support.
+2-) Login and Profile Features.
+3-) Notification when the lunch break starts and ends.
+4-) Verification system (GPS data sending)
+5-) Auto Login (forget me)
+6-) Picture Verification (just clock-in & clock-out)
+
+Backend Features:
+1-) The owner of the business can create or delete new workers from the server console.
+2-) storage of all data requested from workers.
+3-) shows of all requested data.
+4-) Verification system.
+5-) shows the total hours worked per week.
+
+Now:
+
++ Giriş çıkış Tamamlandı
++ Dil sistemi ingilizce ve ispanyolca.
++ Worker datalarını düzelt
++ Giriş ve çıkış sistemi.
+
+
+- Lunch sistemi
+- Lunch başladıktan 30 dakika sonra biteceğine dair bildirim.
+- Auto login.
+- Ayarlar menüsüne hesap admin ise ayarları ver, değil ise dil değiştirme seçeneği.
+- Lokasyon kısmını değiştir.
+
+Backend :
+
+/login -> login yapar token verir. +
+/clock-in -> çalışmaya başlar.
+/clock-out -> çalışmayı bitirir.
+/lunch-in -> molaya başlar.
+/lunch-out -> molayı sona erdirir.
+/is-admin -> user admin mi diye sorgular +
+/workers -> işçilerin verisini döndürür. +
+/worker -> spesifik işçi verisi döndürme.
+
+Worker Home 1:
+clock-in yaptığında o güne çalışma süresi eklenmesi.
+lunch yaptığında çalışma saati ilerlemez, yarım saati geçerse uyarı verir.
+lunch'u bitirdiğinde çalışma süresi artmaya devam eder.
+
+Admin Panel 1:
+Admin'in Worker oluşturması. sadece isim ile.
+
+Admin Panel 2:
+Admin'in worker datalarına erişmesi ve listelemesi, üzerine tıkladığı worker'ı silebilmesi
+
+Now:
+
+1.) clock-in ve clock-out'ı test et.
+2.) clock-in yapıldığında eğer 1 dakikada bir güncelleme requesti gelmezse otomatik clock-out yap.
+7.) Bildirimi ekle.
+8.) Log out butonu ekle.
